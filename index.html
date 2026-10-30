@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVEK | Projekční a inženýrská kancelář</title>
+    <meta name="description" content="Projekční a inženýrská kancelář AVEK. Komplexní služby od úvodní studie až po úspěšnou kolaudaci.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome pro ikony -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS přes CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Konfigurace Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+
+    <!-- Hlavička (Navbar) -->
+    <nav class="fixed w-full z-50 top-0 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-3xl font-bold text-brand-700 tracking-tight">
+                        AVEK<span class="text-brand-500">.</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#o-nas" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">O nás</a>
+                    <a href="#sluzby" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Služby</a>
+                    <a href="#reference" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Reference</a>
+                    <a href="#kontakt" class="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg">Kontakt</a>
+                </div>
+
+                <!-- Mobile menu button (funkcionalita vyžaduje JS, zde pouze vizuál) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-brand-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Sekce -->
+    <section class="relative h-screen flex items-center justify-center pt-20">
+        <!-- Pozadí s překryvem -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" 
+                 alt="Moderní architektura" 
+                 class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-slate-900/70"></div>
+        </div>
+        
+        <!-- Obsah Hero sekce -->
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-lg">
+                AVEK
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 font-light leading-relaxed">
+                Projekční a inženýrská kancelář. Komplexní služby od úvodní studie až po úspěšnou kolaudaci.
+            </p>
+            <a href="#kontakt" class="inline-block bg-brand-600 hover:bg-brand-500 text-white text-lg font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-brand-500/30 transform hover:-translate-y-1">
+                Kontaktujte nás
+            </a>
+        </div>
+    </section>
+
+    <!-- O nás Sekce -->
+    <section id="o-nas" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-sm font-bold text-brand-600 uppercase tracking-wider mb-2">O společnosti</h2>
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Zkušenosti a spolehlivost</h3>
+            <div class="w-24 h-1 bg-brand-500 mx-auto mb-10 rounded-full"></div>
+            <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
+                Naše kancelář má dlouholeté zkušenosti. Od svého vzniku jsme realizovali desítky studií, dokumentací, projektů, odborných konzultací a provedli jsme technický dozor u řady staveb, které byly úspěšně dokončeny a zkolaudovány. Zakládáme si na individuálním přístupu a preciznosti v každém detailu.
+            </p>
+        </div>
+    </section>
+
+    <!-- Naše služby Sekce -->
+    <section id="sluzby" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-brand-600 uppercase tracking-wider mb-2">Co nabízíme</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Naše služby</h3>
+                <div class="w-24 h-1 bg-brand-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Služba 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Projekce a dokumentace</h4>
+                    <p class="text-gray-600">
+                        Kompletní projektová dokumentace pro pozemní stavby ve všech stupních přípravy.
+                    </p>
+                </div>
+                
+                <!-- Služba 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Inženýrská činnost</h4>
+                    <p class="text-gray-600">
+                        Zajištění veškerých povolení a komunikace s dotčenými orgány státní správy.
+                    </p>
+                </div>
+                
+                <!-- Služba 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Technický dozor</h4>
+                    <p class="text-gray-600">
+                        Nezávislá kontrola kvality a postupu stavebních prací z pozice investora.
+                    </p>
+                </div>
+                
+                <!-- Služba 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Studie a konzultace</h4>
+                    <p class="text-gray-600">
+                        Odborné posouzení záměrů, zpracování variantních studií a poradenství.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reference Sekce -->
+    <section id="reference" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-brand-600 uppercase tracking-wider mb-2">Naše práce</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Vybrané reference</h3>
+                <div class="w-24 h-1 bg-brand-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Reference 1 -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c1590f?q=80&w=800&auto=format&fit=crop" 
+                             alt="Skladová hala Přední Kopanina" 
+                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h4 class="text-xl font-bold">Skladová hala Přední Kopanina</h4>
+                        <p class="text-sm text-gray-300 mt-1">Průmyslový objekt</p>
+                    </div>
+                </div>
+
+                <!-- Reference 2 -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop" 
+                             alt="RD Šestajovice 2018" 
+                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h4 class="text-xl font-bold">RD Šestajovice 2018</h4>
+                        <p class="text-sm text-gray-300 mt-1">Rodinný dům</p>
+                    </div>
+                </div>
+
+                <!-- Reference 3 -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop" 
+                             alt="Novostavba RD v Lipníku" 
+                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h4 class="text-xl font-bold">Novostavba RD v Lipníku</h4>
+                        <p class="text-sm text-gray-300 mt-1">Rodinný dům</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Footer -->
+    <footer id="kontakt" class="bg-slate-900 pt-20 pb-10 text-gray-300 border-t-4 border-brand-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Logo a info -->
+                <div class="lg:col-span-1">
+                    <a href="#" class="text-3xl font-bold text-white tracking-tight mb-6 block">
+                        AVEK<span class="text-brand-500">.</span>
+                    </a>
+                    <p class="text-sm text-gray-400 mb-6">
+                        Komplexní projekční a inženýrské služby. Spolehlivý partner pro vaše stavební záměry.
+                    </p>
+                </div>
+
+                <!-- Kontaktní údaje -->
+                <div class="lg:col-span-2">
+                    <h4 class="text-lg font-bold text-white mb-6 uppercase tracking-wider">Kontaktujte nás</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-user mt-1.5 w-6 text-brand-500 text-center"></i>
+                            <div class="ml-3">
+                                <p class="font-medium text-white">Ing. Vít Kocourek</p>
+                                <p class="text-sm text-gray-400">Kontaktní osoba</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1.5 w-6 text-brand-500 text-center"></i>
+                            <div class="ml-3">
+                                <p>Prosecká 683/115</p>
+                                <p>190 00 Praha 9 - Prosek</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mt-0.5 w-6 text-brand-500 text-center"></i>
+                            <a href="tel:+420723858248" class="ml-3 hover:text-brand-400 transition-colors">+420 723 858 248</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mt-0.5 w-6 text-brand-500 text-center"></i>
+                            <a href="mailto:vit.kocourek@seznam.cz" class="ml-3 hover:text-brand-400 transition-colors">vit.kocourek@seznam.cz</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Fakturační údaje -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6 uppercase tracking-wider">Fakturační údaje</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-file-invoice mt-0.5 w-6 text-brand-500 text-center"></i>
+                            <span class="ml-3">IČO: 69327653</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-globe mt-0.5 w-6 text-brand-500 text-center"></i>
+                            <a href="https://www.avek.cz" class="ml-3 hover:text-brand-400 transition-colors">www.avek.cz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 AVEK. Všechna práva vyhrazena.</p>
+                <div class="mt-4 md:mt-0">
+                    Navrženo s důrazem na kvalitu a detail.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
