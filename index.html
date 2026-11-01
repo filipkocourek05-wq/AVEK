@@ -40,10 +40,10 @@
         }
     </script>
 </head>
-<body class="font-sans text-gray-800 antialiased bg-white">
+<body class="font-sans text-gray-800 antialiased bg-slate-50">
 
     <!-- Hlavička (Navbar) -->
-    <nav class="fixed w-full z-50 top-0 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+    <nav class="fixed w-full z-50 top-0 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
@@ -55,15 +55,14 @@
                 
                 <!-- Desktop menu -->
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#o-nas" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">O nás</a>
                     <a href="#sluzby" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Služby</a>
                     <a href="#reference" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Reference</a>
                     <a href="#kontakt" class="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg">Kontakt</a>
                 </div>
 
-                <!-- Mobile menu button (funkcionalita vyžaduje JS, zde pouze vizuál) -->
+                <!-- Mobile menu button (funkcionalita vizuální) -->
                 <div class="md:hidden flex items-center">
-                    <button class="text-gray-600 hover:text-brand-600 focus:outline-none">
+                    <button class="text-gray-600 hover:text-brand-600 focus:outline-none p-2">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -72,13 +71,13 @@
     </nav>
 
     <!-- Hero Sekce -->
-    <section class="relative h-screen flex items-center justify-center pt-20">
+    <header class="relative h-screen flex items-center justify-center pt-20">
         <!-- Pozadí s překryvem -->
         <div class="absolute inset-0 z-0">
-            <img src="ref8.jpg" 
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" 
                  alt="Moderní architektura" 
                  class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-slate-900/70"></div>
+            <div class="absolute inset-0 bg-slate-900/75"></div>
         </div>
         
         <!-- Obsah Hero sekce -->
@@ -93,22 +92,10 @@
                 Kontaktujte nás
             </a>
         </div>
-    </section>
-
-    <!-- O nás Sekce -->
-    <section id="o-nas" class="py-24 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-sm font-bold text-brand-600 uppercase tracking-wider mb-2">O společnosti</h2>
-            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Zkušenosti a spolehlivost</h3>
-            <div class="w-24 h-1 bg-brand-500 mx-auto mb-10 rounded-full"></div>
-            <p class="text-lg md:text-xl text-gray-600 leading-relaxed">
-                Naše kancelář má dlouholeté zkušenosti. Od svého vzniku jsme realizovali desítky studií, dokumentací, projektů, odborných konzultací a provedli jsme technický dozor u řady staveb, které byly úspěšně dokončeny a zkolaudovány. Zakládáme si na individuálním přístupu a preciznosti v každém detailu.
-            </p>
-        </div>
-    </section>
+    </header>
 
     <!-- Naše služby Sekce -->
-    <section id="sluzby" class="py-24 bg-gray-50">
+    <section id="sluzby" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-sm font-bold text-brand-600 uppercase tracking-wider mb-2">Co nabízíme</h2>
@@ -118,8 +105,8 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Služba 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="w-14 h-14 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
                         <i class="fas fa-pencil-ruler"></i>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-3">Projekce a dokumentace</h4>
@@ -129,8 +116,8 @@
                 </div>
                 
                 <!-- Služba 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="w-14 h-14 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
                         <i class="fas fa-clipboard-list"></i>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-3">Inženýrská činnost</h4>
@@ -140,8 +127,8 @@
                 </div>
                 
                 <!-- Služba 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="w-14 h-14 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
                         <i class="fas fa-hard-hat"></i>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-3">Technický dozor</h4>
@@ -151,8 +138,8 @@
                 </div>
                 
                 <!-- Služba 4 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="w-14 h-14 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
+                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">
                         <i class="fas fa-comments"></i>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-3">Studie a konzultace</h4>
@@ -165,7 +152,7 @@
     </section>
 
     <!-- Reference Sekce -->
-    <section id="reference" class="py-24 bg-white">
+    <section id="reference" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-sm font-bold text-brand-600 uppercase tracking-wider mb-2">Naše práce</h2>
@@ -173,149 +160,195 @@
                 <div class="w-24 h-1 bg-brand-500 mx-auto mt-6 rounded-full"></div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Reference 1 -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="rd_jircany.jpg" 
-                             alt="Rodinný dům, Jirčany" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="rd_jircany.jpg" alt="RD Jirčany" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
                     </div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h4 class="text-xl font-bold">Rodinný dům, Jirčany</h4>
-                    </div>
-                </div>
-
-                <!-- Reference 2 -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="stav_upr_priz_vratnice_dejvice.jpg" 
-                             alt="Stavební úpravy přízemí vrátnice, Dejvice" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
-                    </div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h4 class="text-xl font-bold">Stavební úpravy přízemí vrátnice, Dejvice</h4>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">RD Jirčany</h4>
                     </div>
                 </div>
 
-                <!-- Reference 3 -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="pristavba_nastavba_rd_jinocany.jpg" 
-                             alt="Přístavba a nástavba RD, Jinočany" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="stav_upr_priz_vratnice_dejvice.jpg" alt="Stavební úpravy přízemí, Vrátnice Dejvice" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
                     </div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h4 class="text-xl font-bold">Přístavba a nástavba RD, Jinočany</h4>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">Stavební úpravy přízemí, Vrátnice Dejvice</h4>
                     </div>
                 </div>
 
-                <!-- Reference 4 -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="stat_posudek_rd_slatinany.jpg" 
-                             alt="Statický posudek RD, Slatiňany" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="garaz_kovanec.jpg" alt="Garáž Kovanec" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
                     </div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h4 class="text-xl font-bold">Statický posudek RD, Slatiňany</h4>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">Garáž Kovanec</h4>
                     </div>
                 </div>
 
-                <!-- Reference 5 -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="rd_vrchlabi_d.jpg" 
-                             alt="Rodinný dům, Vrchlabí" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="bobak_kolodeje.jpg" alt="Bobák Koloděje" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
                     </div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h4 class="text-xl font-bold">Rodinný dům, Vrchlabí</h4>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">Bobák Koloděje</h4>
                     </div>
                 </div>
 
-                <!-- Reference 6 -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="rd_benatky.jpg" 
-                             alt="Rodinný dům, Benátky" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="servis.jpg" alt="Autoservis" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
                     </div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h4 class="text-xl font-bold">Rodinný dům, Benátky</h4>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">Autoservis</h4>
                     </div>
                 </div>
 
-                <!-- Reference 7 -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="garaz_kovanec.jpg" 
-                             alt="Garáž, Kovanec" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="janskeho.jpg" alt="TDI Sanace Fasády Velká Ohrada" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
                     </div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h4 class="text-xl font-bold">Garáž, Kovanec</h4>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">TDI Sanace Fasády Velká Ohrada</h4>
                     </div>
                 </div>
 
-                <!-- Reference 8 -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="rd_mnichovice.jpg" 
-                             alt="Rodinný dům, Mnichovice" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="statekbrezany.jpg" alt="Rekonstrukce statku Břežany na penzion" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
                     </div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h4 class="text-xl font-bold">Rodinný dům, Mnichovice</h4>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">Rekonstrukce statku Břežany na penzion</h4>
                     </div>
                 </div>
 
-                <!-- Reference 9 -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="servis_klicany1.jpg" 
-                             alt="Servis, Klíčany" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="rd%20čakovice.jpg" alt="Rodinný dům Čakovice" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
                     </div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h4 class="text-xl font-bold">Servis, Klíčany</h4>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">Rodinný dům Čakovice</h4>
                     </div>
                 </div>
 
-                <!-- Reference 10 -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="janskeho.jpg" 
-                             alt="Projekt Janského" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="pažení.jpg" alt="Pažení pro pokládku kabelů včetně jam protlaků" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
                     </div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h4 class="text-xl font-bold">Projekt Janského</h4>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">Pažení pro pokládku kabelů včetně jam protlaků</h4>
                     </div>
                 </div>
 
-                <!-- Reference 11 -->
-                <div class="group rounded-2xl overflow-hidden shadow-lg bg-gray-50 relative">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="bobak_kolodeje.jpg" 
-                             alt="Rodinný dům, Koloděje" 
-                             class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="mš p6.jpg" alt="Přístavba MŠ Praha" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
                     </div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <h4 class="text-xl font-bold">Rodinný dům, Koloděje</h4>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">Přístavba MŠ Praha</h4>
                     </div>
                 </div>
+
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="mšpit.jpg" alt="MŠ Pitkovice" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">MŠ Pitkovice</h4>
+                    </div>
+                </div>
+
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="cni.jpg" alt="skladová a výrobní hala Praha" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">skladová a výrobní hala Praha</h4>
+                    </div>
+                </div>
+
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="dědina.jpg" alt="Sanace střešního pláště ZŠ Praha" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">Sanace střešního pláště ZŠ Praha</h4>
+                    </div>
+                </div>
+
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="sofil.JPG" alt="TDI novostavba BD" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">TDI novostavba BD</h4>
+                    </div>
+                </div>
+
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="jesenice.jpg" alt="novostavba MŠ" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">novostavba MŠ</h4>
+                    </div>
+                </div>
+
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="ŠEST.jpg" alt="novostavba RD" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">novostavba RD</h4>
+                    </div>
+                </div>
+
+                <!-- Reference Item -->
+                <div class="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white relative">
+                    <div class="relative h-56 overflow-hidden bg-gray-200">
+                        <img src="majer%20kobylisy.jpg" alt="novostavba RD" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out" onerror="this.src='https://placehold.co/600x400/eeeeee/999999?text=Chyb%C3%AD+foto'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80"></div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+                        <h4 class="text-lg font-bold leading-tight drop-shadow-md">novostavba RD</h4>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -379,11 +412,8 @@
                 </div>
             </div>
             
-            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                <p>&copy; 2026 AVEK. Všechna práva vyhrazena.</p>
-                <div class="mt-4 md:mt-0">
-                    Navrženo s důrazem na kvalitu a detail.
-                </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col justify-center items-center text-sm text-gray-500 text-center">
+                <p>&copy; 2023 AVEK. Všechna práva vyhrazena.</p>
             </div>
         </div>
     </footer>
